@@ -17,4 +17,5 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
+    private val forecaBaseUrl = "https://fnw-us.foreca.com"
 }
