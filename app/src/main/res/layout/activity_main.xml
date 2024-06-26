@@ -1,47 +1,54 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:orientation="vertical">
 
-    <LinearLayout android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="8dp">
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
 
-        <EditText android:id="@+id/queryInput"
+        <EditText
+            android:id="@+id/queryInput"
             android:layout_width="0dp"
             android:layout_height="48dp"
-            android:layout_weight="2"
-            android:hint="@string/input_city"
-            android:layout_marginEnd="16dp"
             android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="2"
             android:autofillHints=""
+            android:hint="@string/input_city"
             android:inputType="text"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black" />
 
-        <Button android:id="@+id/searchButton"
+        <Button
+            android:id="@+id/searchButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_gravity="center_vertical"
-            android:text="@string/search"/>
+            android:layout_weight="1"
+            android:text="@string/search" />
     </LinearLayout>
 
-    <FrameLayout android:layout_width="match_parent"
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.recyclerview.widget.RecyclerView android:id="@+id/locations"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/locations"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
 
-        <TextView android:id="@+id/placeholderMessage"
+        <TextView
+            android:id="@+id/placeholderMessage"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textAlignment="center"
+            android:textColor="@color/black"
             android:textSize="32sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
+            android:textStyle="bold" />
     </FrameLayout>
 </LinearLayout>
