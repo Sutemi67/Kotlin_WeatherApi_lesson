@@ -46,6 +46,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation (libs.retrofit2.retrofit)
-    implementation (libs.retrofit2.converter.gson)
     implementation (libs.gson)
+    implementation (libs.converter.gson)
 }
