@@ -108,6 +108,7 @@ class MainActivity : AppCompatActivity() {
                             }
 
                         }
+
                         401 -> authenticate()
                         else -> showMessage(
                             getString(R.string.something_went_wrong),
@@ -139,7 +140,6 @@ class MainActivity : AppCompatActivity() {
                 override fun onFailure(call: Call<ForecastResponse>, t: Throwable) {
                     Toast.makeText(applicationContext, t.message, Toast.LENGTH_LONG).show()
                 }
-
             })
     }
 
