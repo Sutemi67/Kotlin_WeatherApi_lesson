@@ -1,5 +1,6 @@
 package com.example.weather.retrofit
 
+import com.google.gson.annotations.SerializedName
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -11,7 +12,8 @@ import retrofit2.http.Path
 class ForecaAuthRequest(val user: String, val password: String)
 
 //опишем класс для ответа, получаем токен для последующих запросов
-class ForecaAuthResponse(@SerializedName("access_token") val token: String)
+class ForecaAuthResponse(@SerializedName("access_token") val token: String) {
+}
 
 
 //опишем запрос в интерфейсе
