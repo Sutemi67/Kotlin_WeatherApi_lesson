@@ -3,5 +3,6 @@
     <string name="search">search</string>
     <string name="input_city">input city</string>
     <string name="something_went_wrong">something goes wrong</string>
+    <string name="something_went_wrong2">On Failure</string>
     <string name="nothing_found">nothing found</string>
 </resources>

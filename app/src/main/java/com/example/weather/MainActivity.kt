@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onFailure(call: Call<ForecaAuthResponse>, t: Throwable) {
-                    showMessage(getString(R.string.something_went_wrong), t.message.toString())
+                    showMessage(getString(R.string.something_went_wrong2), t.message.toString())
                 }
 
             })
