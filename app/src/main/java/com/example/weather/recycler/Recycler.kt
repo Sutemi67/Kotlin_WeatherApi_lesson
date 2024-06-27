@@ -21,7 +21,7 @@ class LocationViewHolder(parent: ViewGroup) :
     }
 }
 
-class LocationsAdapter(val clickListener: LocationClickListener) : RecyclerView.Adapter<LocationViewHolder>() {
+class LocationsAdapter(private val clickListener: LocationClickListener) : RecyclerView.Adapter<LocationViewHolder>() {
 
     var locations = ArrayList<ForecastLocation>()
 
